@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  transition: background 0.3s ease;
+}
+
+body.flash {
+  background: radial-gradient(circle, #ff0000, #000);
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+canvas {
+  border: 3px solid #fff;
+  border-radius: 10px;
+  touch-action: none;
+  background: #111;
+  margin-top: 10px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  font-size: 18px;
+}

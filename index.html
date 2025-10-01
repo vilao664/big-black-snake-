@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batalha de Cobrinhas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>⚡ big black snake ⚡</h1>
+
+    <div id="menu">
+      <button onclick="startGame('solo')">🎮 Jogar Solo</button>
+      <button onclick="startGame('multi')">👥 Jogar Multiplayer</button>
+    </div>
+
+    <div class="scoreboard" style="display:none;">
+      <div id="score1">Cobra Azul: 0</div>
+      <div id="score2">Cobra Vermelha: 0</div>
+    </div>
+
+    <canvas id="gameCanvas" width="500" height="500" style="display:none;"></canvas>
+    <button id="restartBtn" onclick="restartGame()" style="display:none;">🔁 Reiniciar</button>
+  </div>
+
+  <audio id="crashSound" src="clash.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
